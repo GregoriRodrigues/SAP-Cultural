@@ -20,132 +20,111 @@
         /* Reset e estilos gerais */
 
         .header {
-    width: 100%;
-    height: 200px;
-    background: url('cabeca.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-    
-  }
+            width: 100%;
+            height: 200px;
+            
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 34px;
+            font-weight: bold;
+            text-align: center;
 
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #004080;
-    padding: 10px 20px;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s;
-  }
+        }
 
-  .navbar.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #004080;
+            padding: 10px 20px;
+            width: 100%;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
 
-  .logo img {
-    height: 50px;
-  }
+        .navbar.sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
-  .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-  }
+        .logo img {
+            height: 50px;
+        }
 
-  .menu ul li {
-    position: relative;
-  }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+        }
 
-  .menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    display: block;
-  }
+        .menu ul li {
+            position: relative;
+        }
 
-  .menu ul li a:hover {
-    background-color: #333;
-  }
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+        }
 
-  .menu ul li:hover > ul {
-    display: block;
-  }
+        .menu ul li a:hover {
+            background-color: #333;
+        }
 
-  .menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #111;
-    padding: 0;
-    list-style: none;
-    min-width: 200px;
-  }
+        .menu ul li:hover>ul {
+            display: block;
+        }
 
-  .menu ul ul li a {
-    padding: 10px 15px;
-  }
+        .menu ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #111;
+            padding: 0;
+            list-style: none;
+            min-width: 200px;
+        }
 
-  .login-icon img {
-    height: 24px;
-  }
+        .menu ul ul li a {
+            padding: 10px 15px;
+        }
 
-  .content {
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  .hidden-header {
-    display: none;
-  }
-</style>
+        .login-icon img {
+            height: 24px;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="header">
-</div>
+    
 
-<div class="navbar">
-  <div class="logo">
-    <img src="icon/sap.png" alt="SAP Cultural">
-  </div>
-  <div class="menu">
-    <ul>
-      <li><a href="#home">INÍCIO</a></li>
-      <li><a href="#sap-cultural">SAP CULTURAL</a></li>
-      <li><a href="#lei-paulo-gustavo">LEI PAULO GUSTAVO</a></li>
-      <li><a href="#pnab">PNAB</a></li>
-      <li><a href="#publicacoes">PUBLICAÇÕES</a></li>
-      <li><a href="#cadastro">CADASTRO</a></li>
-      <li class="login-icon"><a href="#login"><img src="icon/login.png" alt="Login"></a></li>
-    </ul>
-  </div>
-</div>
-<script>
-    window.addEventListener('scroll', function() {
-      var header = document.querySelector('.header');
-      var navbar = document.querySelector('.navbar');
-      if (window.scrollY > 200) {
-        header.classList.add('hidden-header');
-        navbar.classList.add('sticky');
-      } else {
-        header.classList.remove('hidden-header');
-        navbar.classList.remove('sticky');
-      }
-    });
-  </script>
+    <div class="navbar">
+        <div class="logo">
+            <img src="icon/sap.png" alt="SAP Cultural">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">INÍCIO</a></li>
+                <li><a href="#sap-cultural">SAP CULTURAL</a></li>
+                <li><a href="#lei-paulo-gustavo">LEI PAULO GUSTAVO</a></li>
+                <li><a href="#pnab">PNAB</a></li>
+                <li><a href="#publicacoes">PUBLICAÇÕES</a></li>
+                <li><a href="#cadastro">CADASTRO</a></li>
+                <li class="login-icon"><a href="#login"><img src="icon/login.png" alt="Login"></a></li>
+            </ul>
+        </div>
+    </div>
+
     <!----------------------------------------------- INICIO MENU NAVBAR------------------------------------------
     <div class="navbar">
         <div class="container">
@@ -182,19 +161,19 @@
 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="cultura1.png" alt="Slide 1">
+                        <img src="Fotos/cultura5.png" alt="Slide 1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="maracuja.jpg" alt="Slide 2">
+                        <img src="Fotos/cultura6.png" alt="Slide 2">
                     </div>
                     <div class="swiper-slide">
-                        <img src="cultura5.png" alt="Slide 3">
+                        <img src="Fotos/flor1.png" alt="Slide 3">
                     </div>
                     <div class="swiper-slide">
-                        <img src="cultura6.png" alt="Slide 4">
+                        <img src="Fotos/flor3.png" alt="Slide 4">
                     </div>
                     <div class="swiper-slide">
-                        <img src="4.jpg" alt="Slide 5">
+                        <img src="Fotos/4.jpg" alt="Slide 5">
                     </div>
                     <!-- Adicione mais slides conforme necessário -->
                 </div>
@@ -215,14 +194,15 @@
         <div class="slider">
             <div class="slides">
                 <div class="slide">
-                    <img src="logopaulo.png" alt="Lei Paulo Gustavo">
+                    <img src="Banners/logopaulo.png" alt="Lei Paulo Gustavo">
                     <div class="slide-info">
                         <a href="https://www.gov.br/secom/pt-br/acesso-a-informacao/comunicabr/lista-de-acoes-e-programas/lei-paulo-gustavo"
                             class="button">Clique aqui e saiba mais</a>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="logoaldir.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <img src="Banners/logoaldir.png"
+                        alt="Programa Estadual de Formação e Qualificação na Área Cultural">
                     <div class="slide-info">
                         <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
                     </div>
@@ -258,7 +238,7 @@
         </div>
         <div class="Noticia">
             <div class="Noticia-main">
-                <img src="paulo.png" alt="Main News Image" class="Noticia-image" id="mainNewsImage">
+                <img src="Fotos/paulo.png" alt="Main News Image" class="Noticia-image" id="mainNewsImage">
                 <div class="Noticia-caption">
                     <h2 id="mainNewsTitle">A Lei Paulo Gustavo é uma importante ferramenta para promover a
                         democratização da cultura</h2>
@@ -415,47 +395,7 @@
     <!----------------------------------------- INICIO NOSSOS ESPAÇOS ------------------------------->
 
 
-    <!----------------------------------------------- FIM  NOSSOS ESPAÇOS ---------------------------->
-    <hr>
-    <br>
-    <br>
-    <br>
-    <!--  <h1> NOSSOS ESPAÇOS</h1>
-    <div class="grid-container">
-        <div class="card fade-in">
-            <img src="img/arquivo_publico_ro.jpg" alt="Arquivo Público">
-            <p>ARQUIVO PÚBLICO</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/marco_ro.jpg" alt="MARCO">
-            <p>MARCO</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/concha_acustica_ro.jpg" alt="Concha Acústica Helena Meirelles">
-            <p>CONCHA ACÚSTICA HELENA MEIRELLES</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/centro_cultural_ro.jpg" alt="Centro Cultural José Octávio Guizzo">
-            <p>CENTRO CULTURAL JOSÉ OCTÁVIO GUIZZO</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/casa_artesao_ro.jpg" alt="Casa do Artesão">
-            <p>CASA DO ARTESÃO</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/biblioteca_publica_ro.jpg" alt="Biblioteca Pública Isaias Paim">
-            <p>BIBLIOTECA PÚBLICA ISAÍAS PAIM</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/museu_imagem_som_ro.jpg" alt="Museu da Imagem e do Som">
-            <p>MUSEU DA IMAGEM E DO SOM - MIS</p>
-        </div>
-        <div class="card fade-in">
-            <img src="img/conselho_estadual_cultura_ro.jpg" alt="Conselho Estadual de Cultura">
-            <p>CONSELHO ESTADUAL DE CULTURA</p>
-        </div>
-    </div>
--->
+
 
 
     <!-----------------------------------------------INICIO Footer----------------------------------------->
@@ -465,10 +405,9 @@
             <div class="footer-content">
                 <div class="footer-section about">
                     <h2>SUPERINTENDÊNCIA DA JUVENTUDE, CULTURA, ESPORTE E LAZER</h2>
-                    <p>Horário: 7:30 - 11:30 | 13:30 - 17:30<br>
+                    <p>Horário: 7:30 às 13:30<br>
                         Telefone: (69) xxxx-xxxx<br>
-                        CAP<br>
-                        Centro<br>
+                        CPA<br>
                         Porto Velho - RO<br>
                         CEP: 76000-0</p>
                 </div>
@@ -495,7 +434,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <img src="Sejucel Digital .png" width="200px">
+                <img src="Logos/Sejucel Digital .png" width="200px">
 
             </div>
         </footer>

@@ -113,7 +113,20 @@ function changeSlide(n) {
 
 showSlides();
 
-//////////////
+// Menu fixo na rolagem
+
+
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 200) {
+        header.classList.add('hidden-header');
+        navbar.classList.add('sticky');
+      } else {
+        header.classList.remove('hidden-header');
+        navbar.classList.remove('sticky');
+      }
+    });
 
 
 
