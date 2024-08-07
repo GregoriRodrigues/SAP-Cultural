@@ -1,2 +1,2 @@
 # SAP- CULTURA
-# sap-cultural
+# Criação de um site voltado para a cultura. 
