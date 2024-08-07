@@ -150,98 +150,14 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*  DE UMA ATENÇÃO AQUI DEPOIS, GREGO.    -------- INICIO -  Home Section - FOTO DA CAPA */
 
 #home {
     position: relative;
     text-align: center;
     color: rgb(0, 59, 148);
-    margin: 25px;
+    margin: 15px;
 }
-
-
-#home .titulo-sap {
-    /* FRASE -SAP CULTURA*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 13px;
-    margin-top: 10px;
-    /* Ajuste o espaçamento superior conforme necessário */
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    transition: opacity 0.9s ease;
-    min-height: 1vh;
-    /* Garante que a seção tenha pelo menos metade da altura da tela */
-}
-
-#home .titulo-sap h1 {
-    margin: 20px 5px;
-    /* Margens verticais */
-    font-weight: bold;
-    /* Negrito */
-    opacity: 1;
-    /* Inicialmente visível */
-    background-color: rgba(248, 249, 250, 0.438);
-    /*Cor de fundo suave */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    transition: opacity 0.9s ease;
-    /* Transição de opacidade */
-}
-
-.titulo-sap h1.text-primary {
-    font-size: 50px;
-    /* Tamanho da fonte */
-    color: #074a92;
-    /* Cor primária */
-}
-
-.titulo-sap h1.text-muted {
-    font-size: 30px;
-    /* Tamanho da fonte */
-    color: #e7eaec;
-    /* Cor suavizada */
-}
-
-/* Animação de fade-in */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        /* Tornar visível */
-    }
-}
-
-/* Classe para aplicar fade-out */
-.fade-out {
-    opacity: 0;
-    pointer-events: none;
-    /* Impede interação quando invisível */
-}
-
-#home .titulo-sap p {
-    font-size: 1.5em;
-    font-size: 60px;
-    /* Tamanho da fonte */
-    color: #010911;
-    /* Cor suavizada */
-}
-
-
 
 
 /* Form Styles */
@@ -305,6 +221,8 @@ body {
 .radio-buttons input {
     margin-right: 5px;
 }
+
+
 
 /* Icons Styles */
 .icons {
@@ -405,6 +323,7 @@ body {
     cursor: pointer;
 }
 
+
 .news-image {
     width: 50px;
     /* Ajuste o tamanho conforme necessário */
@@ -436,8 +355,10 @@ body {
 .Noticia-more:hover {
     text-decoration: underline;
 }
+/* ----------------FIM  NOTICIAS SLIDE ----------------*/
 
-/*-----------------------------------------------PROGRAMAS E PROJETOS-----------------------------------*/
+
+/*-----------------------------------------------INICIO BANNERS-----------------------------------*/
 
 
 .programas {
@@ -457,7 +378,7 @@ body {
     width: 1200px;
     /* Ajuste a largura aqui */
     max-width: 100%;
-    height: 230px;
+    height: 190px;
     /* Ajuste a altura aqui */
     margin: auto;
     overflow: hidden;
@@ -547,11 +468,11 @@ body {
     background-color: rgba(0, 0, 0, 0.918);
 }
 
+/*-----------------------------------------------FIM BANNERS-----------------------------------*/
 
 
 
 
-/* INICIO CARDS EDITAL */
 /*---------------- INCIO CARDS EDITAL --------------------*/
 
 .edital {
