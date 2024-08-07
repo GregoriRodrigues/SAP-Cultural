@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="sejucel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title> SAP Cultural</title>
+
+    <style>
+        /* Reset e estilos gerais */
+
+        .header {
+    width: 100%;
+    height: 200px;
+    background: url('cabeca.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004080;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .menu ul li {
+    position: relative;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .menu ul li a:hover {
+    background-color: #333;
+  }
+
+  .menu ul li:hover > ul {
+    display: block;
+  }
+
+  .menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    padding: 0;
+    list-style: none;
+    min-width: 200px;
+  }
+
+  .menu ul ul li a {
+    padding: 10px 15px;
+  }
+
+  .login-icon img {
+    height: 24px;
+  }
+
+  .content {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .hidden-header {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="icon/sap.png" alt="SAP Cultural">
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="#home">INÍCIO</a></li>
+      <li><a href="#sap-cultural">SAP CULTURAL</a></li>
+      <li><a href="#lei-paulo-gustavo">LEI PAULO GUSTAVO</a></li>
+      <li><a href="#pnab">PNAB</a></li>
+      <li><a href="#publicacoes">PUBLICAÇÕES</a></li>
+      <li><a href="#cadastro">CADASTRO</a></li>
+      <li class="login-icon"><a href="#login"><img src="icon/login.png" alt="Login"></a></li>
+    </ul>
+  </div>
+</div>
+<script>
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 200) {
+        header.classList.add('hidden-header');
+        navbar.classList.add('sticky');
+      } else {
+        header.classList.remove('hidden-header');
+        navbar.classList.remove('sticky');
+      }
+    });
+  </script>
+    <!----------------------------------------------- INICIO MENU NAVBAR------------------------------------------
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="LOGOS/logo_gov.png" alt="Logo">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="Inicio.html"><i class="fa fa-home"></i> INÍCIO</a></li>
+                <li><a href="http://sapcultural.sistemas.ro.gov.br/EditalDeCategoria/EditaisAbertos"><i
+                            class="fa fa-file-text-o"></i> EDITAIS </a></li>
+                <li><a href="https://documentos.sistemas.ro.gov.br/books/registro-de-software-zpj/page/11-sapcultural"><i
+                            class="fa fa-info-circle"></i> SOBRE NÓS</a></li>
+                <li><a href="contato.html"><i class="fa fa-envelope"></i> CONTATO</a></li>
+                <li><a href="cadastro.html"><i class="fa fa-user"></i> CADASTRO</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+            </ul>
+            <div class="right-icon">
+                <img src="LOGOS/logo_sejucel.png" alt="Right Icon">
+            </div>
+        </div>
+    </div>-->
+    <!----------------------------------------------- FIM MENU NAVBAR-------------------------------------------->
+
+
+
+    <!----------------------------------------------- INICIO SLIDE capa -------------------------------------------->
+    <div>
+        <div id="home" class="background-image">
+            <!-- Slide Container -->
+            <div class="swiper-container home-slider">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="cultura1.png" alt="Slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="maracuja.jpg" alt="Slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="cultura5.png" alt="Slide 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="cultura6.png" alt="Slide 4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="4.jpg" alt="Slide 5">
+                    </div>
+                    <!-- Adicione mais slides conforme necessário -->
+                </div>
+
+                <!-- Navigation buttons SLIDE -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-----------------------------------------------  FIM SLIDE ---------------------------------------------------->
+
+    <!-------------------------------------- PROGRAMAS E PROJETOS ----------------------------->
+    <div class="programas">
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="logopaulo.png" alt="Lei Paulo Gustavo">
+                    <div class="slide-info">
+                        <a href="https://www.gov.br/secom/pt-br/acesso-a-informacao/comunicabr/lista-de-acoes-e-programas/lei-paulo-gustavo"
+                            class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="logoaldir.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="banner.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="logoflor.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------- FIM PROGRAMAS E PROJETOS ----------------------------->
+
+
+    <!----------------------------------------------- INICIO NOTICIAS -------------------------------------------->
+
+    <section id="noticias" class="noticias">
+        <div class="noticias-titulo">
+            <i class="fa fa-newspaper-o"></i>
+            <h2>Notícias</h2>
+        </div>
+        <div class="Noticia">
+            <div class="Noticia-main">
+                <img src="paulo.png" alt="Main News Image" class="Noticia-image" id="mainNewsImage">
+                <div class="Noticia-caption">
+                    <h2 id="mainNewsTitle">A Lei Paulo Gustavo é uma importante ferramenta para promover a
+                        democratização da cultura</h2>
+                </div>
+            </div>
+            <div class="Noticia-side">
+                <ul id="newsList">
+                    <li class="news-item active" data-image="paulo.png"
+                        data-title="A Lei Paulo Gustavo é uma importante ferramenta para promover a democratização da cultura">
+                        <span>A Lei Paulo Gustavo é uma importante ferramenta para promover a democratização da
+                            cultura</span>
+                    </li>
+                    <li class="news-item" data-image="news-image2.jpg"
+                        data-title="Aberto credenciamento de candidaturas para o Conselho Estadual de Cultura">
+                        <span>A Lei Federal nº 14.017/2020, conhecida como Lei Aldir Blanc (LAB), estabelece uma série
+                            de medidas emergenciais para o setor cultural e criativo, fortemente impactado pela pandemia
+                            do novo coronavírus (Covid-19).</span>
+                    </li>
+                    <li class="news-item" data-image="news-image3.jpg"
+                        data-title="Queijo Artesanal Serrano pode se tornar Patrimônio Cultural Imaterial do Rio Grande do Sul">
+                        <span>A abertura do Flor do Maracujá 2024 aconteceu no dia 21 de junho e no total foram 30
+                            agremiações do grupo especial e cinco do grupo de acesso.</span>
+                    </li>
+                    <li class="news-item" data-image="news-image4.jpg"
+                        data-title="Governo recebe apoio da Unesco para recuperação do patrimônio cultural afetado pelas...">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolorem ex qui esse
+                            consequuntur excepturi voluptatibus molestiae, distinctio voluptatum dolores, ut harum vitae
+                            repudiandae dignissimos rerum.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------- FIM NOTICIAS -------------------------------------------->
+
+
+    <hr>
+    <!----------------------- AREA DE ATUAÇÃO INCIO ----------------------->
+    <section class="area-de-atuacao">
+        <h1>ÁREA DE ATUAÇÃO</h1>
+
+        <div class="atuacao-container">
+
+            <div class="atuacao-item">
+                <img src="icon/juventude.png" alt="Ícone Juventude">
+                <h2>JUVENTUDE</h2>
+                <p>Desenvolvimento de políticas públicas voltadas para a juventude, inclusão social e cidadania.</p>
+            </div>
+
+            <div class="atuacao-item">
+                <img src="icon/cultura.png" alt="Ícone Cultura">
+                <h2>CULTURA</h2>
+                <p>Fomento a projetos culturais, apoio a artistas e eventos culturais, gestão de equipamentos
+                    culturais.</p>
+            </div>
+            <div class="atuacao-item">
+                <img src="icon/esporte.png" alt="Ícone Esporte">
+                <h2>ESPORTE</h2>
+                <p>Promoção de atividades esportivas, incentivo a eventos esportivos e apoio a atletas.</p>
+            </div>
+
+            <div class="atuacao-item">
+                <img src="icon/lazer.png" alt="Ícone Lazer">
+                <h2>LAZER</h2>
+                <p>Criação e apoio a atividades de lazer e entretenimento para a população.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!------------------------- FIM AREA DE ATUAÇÃO ----------------------------->
+
+    <section class="parallax">
+        <div class="parallax-overlay"></div> <!-- Overlay para efeito de fade in -->
+        <div class="parallax-content">
+        </div>
+    </section>
+
+
+
+
+    <hr>
+    <!--------------------------------- CARD EDITAIS  --------------------->
+    <section id="editais" class="pacotes">
+        <h1 class="titulo-pacotes">Editais Abertos</h1>
+        <!-- CARD 1-->
+        <div class="edital">
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------- FIM  CARD EDITAIS  --------------------->
+
+    <hr>
+
+
+
+    <!----------------------------------------- INICIO NOSSOS ESPAÇOS ------------------------------->
+
+
+    <!----------------------------------------------- FIM  NOSSOS ESPAÇOS ---------------------------->
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!--  <h1> NOSSOS ESPAÇOS</h1>
+    <div class="grid-container">
+        <div class="card fade-in">
+            <img src="img/arquivo_publico_ro.jpg" alt="Arquivo Público">
+            <p>ARQUIVO PÚBLICO</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/marco_ro.jpg" alt="MARCO">
+            <p>MARCO</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/concha_acustica_ro.jpg" alt="Concha Acústica Helena Meirelles">
+            <p>CONCHA ACÚSTICA HELENA MEIRELLES</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/centro_cultural_ro.jpg" alt="Centro Cultural José Octávio Guizzo">
+            <p>CENTRO CULTURAL JOSÉ OCTÁVIO GUIZZO</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/casa_artesao_ro.jpg" alt="Casa do Artesão">
+            <p>CASA DO ARTESÃO</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/biblioteca_publica_ro.jpg" alt="Biblioteca Pública Isaias Paim">
+            <p>BIBLIOTECA PÚBLICA ISAÍAS PAIM</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/museu_imagem_som_ro.jpg" alt="Museu da Imagem e do Som">
+            <p>MUSEU DA IMAGEM E DO SOM - MIS</p>
+        </div>
+        <div class="card fade-in">
+            <img src="img/conselho_estadual_cultura_ro.jpg" alt="Conselho Estadual de Cultura">
+            <p>CONSELHO ESTADUAL DE CULTURA</p>
+        </div>
+    </div>
+-->
+
+
+    <!-----------------------------------------------INICIO Footer----------------------------------------->
+    <section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>SUPERINTENDÊNCIA DA JUVENTUDE, CULTURA, ESPORTE E LAZER</h2>
+                    <p>Horário: 7:30 - 11:30 | 13:30 - 17:30<br>
+                        Telefone: (69) xxxx-xxxx<br>
+                        CAP<br>
+                        Centro<br>
+                        Porto Velho - RO<br>
+                        CEP: 76000-0</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>REDES SOCIAIS</h2>
+                    <div class="social-links">
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer-section location">
+                    <h2>LOCALIZAÇÃO</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.883238392618!2d-54.6141
+                        2928496582!3d-20.459648586292707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+                        9486e8f2d0b0d0cf%3A0x7f0e5bb2c4d99d92!2sFundacao%20De%20Cultura%20De%20Mato%20Grosso%20Do%20Sul!5e
+                        0!3m2!1sen!2sbr!4v1689876543210!5m2!1sen!2sbr" width="200" height="150" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-section feedback">
+                    <h2>AVALIE NOSSO SITE</h2>
+                    <p>Obrigado pela sua colaboração<br>
+                        Total de votos computados: 58</p>
+                    <button>COMO PODEMOS MELHORAR?</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="Sejucel Digital .png" width="200px">
+
+            </div>
+        </footer>
+
+    </section>
+    <!-----------------------------------------------FIM  Footer----------------------------------------------->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="sejucel.js"></script>
+    <script>
+        feather.replace();
+
+        // Rola para o topo da página ao carregar
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        feather.replace();
+
+        // Inicialize AOS
+        AOS.init();
+
+        // Rola para o topo da página ao carregar
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
+</body>
+
+</html>
