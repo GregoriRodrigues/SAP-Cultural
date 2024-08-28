@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Proposta</title>
+    <!-- Link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"] {
+            width: 99%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .button-grid .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container button {
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-container button.upload-btn {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .form-container .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-container .upload-btn-wrapper button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-container .upload-btn-wrapper input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .form-container input[type="button"].attach-btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .submit-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .form-container button.submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            width: auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Envio de Proposta</h3>
+        <form>
+            <label for="cpf-cnpj">CPF/CNPJ:</label>
+            <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
+
+            <label for="nome-razao">Nome/Razão Social:</label>
+            <input type="text" id="nome-razao" name="nome-razao" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Botões de Upload em Grade com Ícones -->
+            <div class="button-grid">
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-alt"></i> Certidão Negativa TRIBUTOS MUNICIPAIS</button>
+                        <input type="file" name="certidao_tributos_municipais">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-alt"></i> Certidão Negativa TRIBUTOS ESTADUAIS</button>
+                        <input type="file" name="certidao_tributos_estaduais">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-alt"></i> Certidão Negativa TRIBUTOS FEDERAIS</button>
+                        <input type="file" name="certidao_tributos_federais">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-alt"></i> ANEXO II - DADOS ARTISTICO</button>
+                        <input type="file" name="anexo_ii_dados_artistico">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-alt"></i> ANEXO III - FICHA CADASTRAL</button>
+                        <input type="file" name="anexo_iii_ficha_cadastral">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-id-card"></i> CÓPIA DO RG E CPF OU CNH</button>
+                        <input type="file" name="copia_rg_cpf_cnh">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-home"></i> COMPROVANTE DE RESIDÊNCIA</button>
+                        <input type="file" name="comprovante_residencia">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-signature"></i> ANEXO IV - DECLARAÇÕES</button>
+                        <input type="file" name="anexo_iv_declaracoes">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-video"></i> Vídeo 01</button>
+                        <input type="file" name="video_01">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-video"></i> Vídeo 02</button>
+                        <input type="file" name="video_02">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+                <div class="grid-item">
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="upload-btn"><i class="fas fa-file-invoice"></i> Comprovante de Situação Cadastral - CNPJ</button>
+                        <input type="file" name="comprovante_cnpj">
+                    </div>
+                    <input type="button" class="attach-btn" value="Anexar">
+                </div>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div class="submit-btn-container">
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Enviar Proposta</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
