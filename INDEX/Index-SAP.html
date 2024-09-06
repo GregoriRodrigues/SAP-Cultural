@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="sejucel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title> SAP Cultural</title>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <span id="current-date"></span>
+            <div class="search-container">
+                <input type="text" placeholder="Procurar por...">
+                <button><i class="fas fa-search"></i></button>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/governoro"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@GovernoRO"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="drop">
+                    <a href="#"><i class="fas fa-home"></i> </a>
+                </li>
+                <li class="drop"><a href="#">Cultura</a></li>
+                <li class="drop">
+                    <a href="#"> Artesanato Brasileiro</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="drop">
+                    <a href="#">Editais</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Abertos</a></li>
+                        <li><a href="#">Enviar Proposta</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="drop">
+                    <a href="#"> Paulo Gustavo</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sobre  </a></li>
+                        <li><a href="#">Editais</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop">
+                    <a href="/Aldir.html"> Aldir Blanc</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> Sobre </a></li>
+                        <li><a href="#">Quem era</a></li>
+                        <li><a href="#">Editais</a></li>
+                    </ul>
+                </li>
+
+
+                <!-- <li class="drop"><a href="#">Enviar Proposta</a></li>-->
+                <li class="drop"><a href="#">Cadastro</a></li>
+                <li class="drop"><a href="#">Fale Conosco</a></li>
+                
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+
+
+
+
+
+    <!----------------------------------------------- INICIO SLIDE capa -------------------------------------------->
+    <div>
+        <div id="home" class="background-image">
+            
+            <div class="swiper-container home-slider">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/imagens/artesanato.png" alt="Slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imagens/comida.jpg" alt="Slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imagens/maracuja.jpg" alt="Slide 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imagens/fotoo.jpg" alt="Slide 4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imagens/danca.jpg" alt="Slide 5">
+                    </div>
+                    <!-- Adicione mais slides conforme necessário -->
+                </div>
+
+                <!-- Navigation buttons SLIDE -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-----------------------------------------------  FIM SLIDE ---------------------------------------------------->
+
+
+
+    <!----------------------------------------------- INICIO NOTICIAS -------------------------------------------->
+
+    <section id="noticias" class="noticias">
+        <div class="noticias-titulo">
+            <i class="fa fa-newspaper-o"></i>
+            <h2>Notícias</h2>
+        </div>
+        <div class="Noticia">
+            <div class="Noticia-main">
+                <img src="paulo.png" alt="Main News Image" class="Noticia-image" id="mainNewsImage">
+                <div class="Noticia-caption">
+                    <h2 id="mainNewsTitle">A Lei Paulo Gustavo é uma importante ferramenta para promover a
+                        democratização da cultura</h2>
+                </div>
+            </div>
+            <div class="Noticia-side">
+                <ul id="newsList">
+                    <li class="news-item active" data-image="paulo.png"
+                        data-title="A Lei Paulo Gustavo é uma importante ferramenta para promover a democratização da cultura">
+                        <span>A Lei Paulo Gustavo é uma importante ferramenta para promover a democratização da
+                            cultura</span>
+                    </li>
+                    <li class="news-item" data-image="news-image2.jpg"
+                        data-title="Aberto credenciamento de candidaturas para o Conselho Estadual de Cultura">
+                        <span>A Lei Federal nº 14.017/2020, conhecida como Lei Aldir Blanc (LAB), estabelece uma série
+                            de medidas emergenciais para o setor cultural e criativo, fortemente impactado pela pandemia
+                            do novo coronavírus (Covid-19).</span>
+                    </li>
+                    <li class="news-item" data-image="news-image3.jpg"
+                        data-title="Queijo Artesanal Serrano pode se tornar Patrimônio Cultural Imaterial do Rio Grande do Sul">
+                        <span>A abertura do Flor do Maracujá 2024 aconteceu no dia 21 de junho e no total foram 30
+                            agremiações do grupo especial e cinco do grupo de acesso.</span>
+                    </li>
+                    <li class="news-item" data-image="news-image4.jpg"
+                        data-title="Governo recebe apoio da Unesco para recuperação do patrimônio cultural afetado pelas...">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolorem ex qui esse
+                            consequuntur excepturi voluptatibus molestiae, distinctio voluptatum dolores, ut harum vitae
+                            repudiandae dignissimos rerum.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------- FIM NOTICIAS -------------------------------------------->
+    <hr>
+    <!-------------------------------------- PROGRAMAS E PROJETOS ----------------------------->
+    <div class="programas">
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="logopaulo.png" alt="Lei Paulo Gustavo">
+                    <div class="slide-info">
+                        <a href="https://www.gov.br/secom/pt-br/acesso-a-informacao/comunicabr/lista-de-acoes-e-programas/lei-paulo-gustavo"
+                            class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="logoaldir.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="banner.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="logoflor.png" alt="Programa Estadual de Formação e Qualificação na Área Cultural">
+                    <div class="slide-info">
+                        <a href="link_programa_qualificacao" class="button">Clique aqui e saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------- FIM PROGRAMAS E PROJETOS ----------------------------->
+
+
+    <hr>
+    <!----------------------- AREA DE ATUAÇÃO INCIO ----------------------->
+    <section class="area-de-atuacao">
+        <h1>ÁREA DE ATUAÇÃO</h1>
+
+        <div class="atuacao-container">
+
+            <div class="atuacao-item">
+                <img src="icon/juventude.png" alt="Ícone Juventude">
+                <h2>JUVENTUDE</h2>
+                <p>Desenvolvimento de políticas públicas voltadas para a juventude, inclusão social e cidadania.</p>
+            </div>
+
+            <div class="atuacao-item">
+                <img src="icon/cultura.png" alt="Ícone Cultura">
+                <h2>CULTURA</h2>
+                <p>Fomento a projetos culturais, apoio a artistas e eventos culturais, gestão de equipamentos
+                    culturais.</p>
+            </div>
+            <div class="atuacao-item">
+                <img src="icon/esporte.png" alt="Ícone Esporte">
+                <h2>ESPORTE</h2>
+                <p>Promoção de atividades esportivas, incentivo a eventos esportivos e apoio a atletas.</p>
+            </div>
+
+            <div class="atuacao-item">
+                <img src="icon/lazer.png" alt="Ícone Lazer">
+                <h2>LAZER</h2>
+                <p>Criação e apoio a atividades de lazer e entretenimento para a população.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!------------------------- FIM AREA DE ATUAÇÃO ----------------------------->
+
+    <section class="parallax">
+        <div class="parallax-overlay"></div> <!-- Overlay para efeito de fade in -->
+        <div class="parallax-content">
+        </div>
+    </section>
+
+
+
+
+    <hr>
+    <!--------------------------------- CARD EDITAIS  --------------------->
+    <section id="editais" class="pacotes">
+        <h1 class="titulo-pacotes">Editais Abertos</h1>
+        <!-- CARD 1-->
+        <div class="edital">
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDITAL Nº 1/2024/SEJUCEL-CODEC</h2>
+                    <p>DE CREDENCIAMENTO DE ARTISTAS</p>
+                    <p>MUSICAIS DO ESTADO DE RONDÔNIA</p>
+                </div>
+                <div class="card-body">
+                    <p><strong>Período de Envio:</strong> 17/05/2024 à 17/05/2025</p>
+                    <div class="card-footer">
+                        <p><i class="fa fa-calendar"></i> Publicado em: 01/05/2024</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://rondonia.ro.gov.br/wp-content/uploads/2024/02/EDITAL-No-12024SEJUCEL-SIEC.pdf"
+                            class="btn"><i class="fa fa-info-circle"></i> Detalhes</a>
+                        <a href="#" class="btn cadastrar-btn"><i class="fa fa-user-plus"></i> Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------- FIM  CARD EDITAIS  --------------------->
+
+    <hr>
+
+
+
+    <!----------------------------------------- INICIO NOSSOS ESPAÇOS ------------------------------->
+
+
+
+
+
+
+    <!-----------------------------------------------INICIO Footer----------------------------------------->
+    <section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>SUPERINTENDÊNCIA DA JUVENTUDE, CULTURA, ESPORTE E LAZER</h2>
+                    <p>Horário: 7:30 - 13:30 <br>
+                        Telefone: (69) xxxx-xxxx<br>
+                        CPA<br>
+                        Centro<br>
+                        Porto Velho - RO<br>
+                        CEP: 76000-0</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>REDES SOCIAIS</h2>
+                    <div class="social-links">
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer-section location">
+                    <h2>LOCALIZAÇÃO</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.883238392618!2d-54.6141
+                        2928496582!3d-20.459648586292707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+                        9486e8f2d0b0d0cf%3A0x7f0e5bb2c4d99d92!2sFundacao%20De%20Cultura%20De%20Mato%20Grosso%20Do%20Sul!5e
+                        0!3m2!1sen!2sbr!4v1689876543210!5m2!1sen!2sbr" width="200" height="150" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-section feedback">
+                    <h2>AVALIE NOSSO SITE</h2>
+                    <p>Obrigado pela sua colaboração<br>
+                        Total de votos computados: 58</p>
+                    <button>COMO PODEMOS MELHORAR?</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="LOGOS/Sejucel Digital .png" width="200px">
+                <p> by Gregory Rodrigues</p>
+
+            </div>
+        </footer>
+
+    </section>
+    <!-----------------------------------------------FIM  Footer----------------------------------------------->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="sejucel.js"></script>
+    <script>
+        feather.replace();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentDate = new Date();
+            var formattedDate = currentDate.toLocaleDateString('pt-BR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            document.getElementById('current-date').textContent = 'Rondônia, ' + formattedDate;
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+</body>
+
+</html>
