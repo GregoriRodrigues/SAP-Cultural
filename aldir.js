@@ -364,7 +364,12 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             canais: `
                 <h1>Canais de Atendimento</h1>
-                <p>Site do Pró-cultura: procultura.rs.gov.br...</p>
+                <p>SLorem ipsum dolor sit amet consectetur adipisicing elit. Quae autem iusto labore explicabo eum neque
+                                deserunt beatae voluptatibus placeat itaque. Laboriosam quo quidem inventore distinctio maxime?
+                                Placeat atque eos optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam
+                                asperiores vitae natus similique quas doloribus, quae nam tenetur quo officia aspernatur, dignissimos
+                                delectus deserunt corporis rerum deleniti blanditiis adipisci! Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit....</p>
             `,
             identidade: `
                 <h1>Identidade Visual</h1>

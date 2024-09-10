@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="Cultura.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Cultura</title>
+    <style>
+         /* ESTILOS GERAIS */
+    @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        color: #fff;
+        background-color: #3a037e; /* Cor de fundo da página */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+        /* ------------------- Estilos da Top-Bar ------------------- */
+.top-bar {
+    background-color: #0d223b; /* Cor de fundo da top-bar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input { 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    background-color: #0d223b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ------------------- Estilos do Menu Principal ------------------- */
+.main-nav {
+    text-align: center;
+    background-color: #007bff;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.main-nav ul li {
+    position: relative;
+    
+}
+
+.main-nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding: 23px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: background-color .3s ease, color .3s ease, border-bottom .3s ease, opacity .3s ease;
+    font-weight: 100;
+    opacity: 1; /* Corrigido de 300 para 1 */
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid white;
+    color: #fff;
+}
+
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease, visibility .5s ease;
+    z-index: 1000;
+}
+
+.main-nav ul li:hover ul,
+.main-nav ul li:focus ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-nav ul li ul li {
+    min-width: 190px;
+}
+
+.main-nav ul li ul li a {
+    color: #555;
+    border-bottom: 1px solid #DDE0E7;
+    background: transparent;
+    padding: 1rem 2rem;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.main-nav ul li ul li a:hover,
+.main-nav ul li ul li a:focus {
+    background: #eee;
+    color: #111;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <span id="current-date"></span>
+            <div class="search-container">
+                <input type="text" placeholder="Procurar por...">
+                <button><i class="fas fa-search"></i></button>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/governoro"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@GovernoRO"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="drop">
+                    <a href="/INDEX/Index-SAP.html"><i class="fas fa-home"></i> </a>
+                </li>
+                <li class="drop"><a href="/INDEX/cultura.html">Cultura</a></li>
+                <li class="drop">
+
+                     <a href="/INDEX/pab.html">Programa do Artesanato </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="drop">
+                    <a href="#">Editais SAP Cultural</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Abertos</a></li>
+                        <li><a href="#">Enviar Proposta</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="drop">
+                    <a href="/INDEX/Paulo.html"> Paulo Gustavo</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sobre  </a></li>
+                        <li><a href="#">Quem era</a></li>
+                        <li><a href="#">Editais</a></li>
+                    </ul>
+                </li>
+                <li class="drop">
+                    <a href="/Aldir.html"> Aldir Blanc</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> Sobre </a></li>
+                        <li><a href="#">Quem era</a></li>
+                        <li><a href="#">Editais</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="drop"><a href="#">Cadastro</a></li>
+                <li class="drop"><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+
+    <h1>
+       EDITAIS SAP CULTURAL EM CONSTRUÇÃO...
+    </h1>
+</main>
+   
+
+    <script>
+       feather.replace();
+
+document.addEventListener('DOMContentLoaded', function () {
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleDateString('pt-BR', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    document.getElementById('current-date').textContent = 'Rondônia, ' + formattedDate;
+});
+    </script>
+</body>
+
+</html>

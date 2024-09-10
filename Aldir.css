@@ -10,6 +10,7 @@
         font-family: 'Source Sans Pro', Arial, sans-serif;
         color: #fff;
         background-color: #000000; /* Cor de fundo da página */
+       
     }
 
     html {
@@ -18,7 +19,7 @@
 
     /* ------------------------------------------------------  INICIO - Navbar ------------------------------------------------ */
 
-    /* Fixar a navbar no topo */
+    
     header {
         position: fixed; /* Fixa o header no topo da página */
         top: 0; /* Posiciona o header no topo */
@@ -35,7 +36,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-        font-size: 15px;
+        font-size: 16px;
         color: white;
     }
 
@@ -74,6 +75,7 @@
     .main-nav {
         text-align: center;
         background-color: #007bff;
+        
     }
 
     .main-nav ul {
@@ -81,6 +83,7 @@
         display: flex;
         justify-content: center;
         border-radius: 5px;
+        font-size: 17px;
     }
 
     .main-nav ul li {
@@ -148,7 +151,9 @@
 
     /* ------------------------------------------------------  FIM - Navbar ------------------------------------------------ */
 
-    /* Estilo para o banner */
+
+    
+    /* ----------------Estilo para o banner abaixo do menu navbar ----------------------- */
     .banner {
         width: 100%; /* Faz o banner ocupar toda a largura da tela */
         height: 100%; /* Altura do banner ajustada */
@@ -217,6 +222,7 @@
         border-left: 4px solid #4B89FF; /* Cor da borda lateral ao passar o mouse ou quando ativo */
     }
 
+    
     /* Esconde a barra de rolagem padrão do navegador para Webkit (Chrome, Safari) */
     .sidebar::-webkit-scrollbar {
         display: none; /* Oculta a barra de rolagem */
@@ -232,19 +238,22 @@
         -ms-overflow-style: none; /* Para Internet Explorer 10+ */
     }
 
+
     /* Estilos para o conteúdo principal */
     .content {
         flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
         padding: 20px;
-       /* background-color: #0d2033;  Cor de fundo do conteúdo principal */
+    background-color: #ffffff;  /* Cor de fundo do conteúdo principal */
         color: #fff; /* Cor do texto */
         max-width: 800px; /* Largura máxima para o texto centralizado */
         margin: 0 auto; /* Centraliza o conteúdo na página */
         border-radius: 3px; /* Borda arredondada para o container */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave para o container */
+        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  Sombra suave para o container */
     }
 
+    
     /* ----------Estilos para o Título Principal -------------*/
+    
     .content h1 {
         font-size: 2.5em; /* Tamanho grande para o título */
         font-weight: bold; /* Negrito para destaque */
@@ -372,7 +381,7 @@
 .faq-icon {
     margin-left: 10px;
     transition: transform 0.8s ease;
-    font-size: 16px; /* Ajuste o tamanho da seta se necessário */
+    font-size: 19px; /* Ajuste o tamanho da seta se necessário */
 }
 
 .faq-question.active .faq-icon {
@@ -403,7 +412,7 @@
     width: 100%;
     text-align: left;
     padding: 10px;
-    font-size: 16px;
+    font-size: 17px;
     color: #fff; /* Cor do texto da pergunta */
     background-color: #333; /* Fundo da pergunta */
     border: none;
@@ -443,7 +452,7 @@
 .edital-icon {
     margin-left: 10px;
     transition: transform 0.8s ease;
-    font-size: 16px; /* Ajuste o tamanho da seta se necessário */
+    font-size: 19px; /* Ajuste o tamanho da seta se necessário */
 }
 
 .edital-question.active .edital-icon {
