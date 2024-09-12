@@ -16,11 +16,9 @@
 
     <title> SAP Cultural</title>
 
-
 </head>
 
 <body>
-
     <header>
         <div class="top-bar">
             <span id="current-date"></span>
@@ -38,15 +36,8 @@
                 <li class="drop">
                     <a href="#"><i class="fas fa-home"></i> </a>
                 </li>
-                <li class="drop"><a href="/INDEX/cultura.html">Cultura</a></li>
-                <li class="drop">
-                    <a href="/INDEX/pab.html">Programa do Artesanato </a>
-                    <ul class="dropdown">
-                        <li><a href="#">Submenu 1</a></li>
-                        <li><a href="#">Submenu 2</a></li>
-                        <li><a href="#">Submenu 3</a></li>
-                    </ul>
-                </li>
+                <li class="drop"><a href="/INDEX/cultura.html">SAP Cultural</a></li>
+                
                 <li class="drop">
                     <a href="/INDEX/editaisSAP.html"> Editais SAP Cultural</a>
                     <ul class="dropdown">
@@ -56,9 +47,18 @@
                     </ul>
                 </li>
                 <li class="drop">
+                    <a href="/INDEX/pab.html">Programa do Artesanato </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop">
                     <a href="/INDEX/Paulo.html"> Paulo Gustavo</a>
                     <ul class="dropdown">
-                        <li><a href="#">Sobre  </a></li>
+                        <li><a href="#">Sobre </a></li>
                         <li><a href="#">Editais</a></li>
                         <li><a href="#">Noticias</a></li>
                     </ul>
@@ -72,13 +72,13 @@
                         <li><a href="/Aldir.html#editais">Editais</a></li>
                     </ul>
                 </li>
-                
+
 
 
                 <!-- <li class="drop"><a href="#">Enviar Proposta</a></li>-->
                 <li class="drop"><a href="#">Cadastro</a></li>
                 <li class="drop"><a href="#">Fale Conosco</a></li>
-                
+
             </ul>
         </nav>
 
@@ -88,45 +88,17 @@
 
 
 
-
-
-
-
-    <!----------------------------------------------- INICIO SLIDE capa -------------------------------------------->
-    <div>
-        <div id="home" class="background-image">
-            
-            <div class="swiper-container home-slider">
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/imagens/artesanato.png" alt="Slide 1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/imagens/comida.jpg" alt="Slide 2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/imagens/maracuja.jpg" alt="Slide 3">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/imagens/fotoo.jpg" alt="Slide 4">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/imagens/danca.jpg" alt="Slide 5">
-                    </div>
-                    <!-- Adicione mais slides conforme necessário -->
-                </div>
-
-                <!-- Navigation buttons SLIDE -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="/seu-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="content-overlay">
+            <h1>SAP Cultural</h1>
+            <p>Seja bem-vindo ao site oficial!</p>
         </div>
-
     </div>
-    <!-----------------------------------------------  FIM SLIDE ---------------------------------------------------->
-
+    
 
 
     <!----------------------------------------------- INICIO NOTICIAS -------------------------------------------->
@@ -355,8 +327,9 @@
                 <div class="footer-section social">
                     <h2>REDES SOCIAIS</h2>
                     <div class="social-links">
-                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                        <a href="#"><img src="/icon/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/@GovernoRO"><img src="/icon/youtube.png" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/governoro"><img src="/icon/instagram.png" alt="Instagram"></a>
                     </div>
                 </div>
                 <div class="footer-section location">
@@ -375,7 +348,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <img src="LOGOS/Sejucel Digital.png" width="200px">
+                <img src="/LOGOS/Sejucel Digital .png" width="200px">
                 <p> by Gregory Rodrigues</p>
 
             </div>

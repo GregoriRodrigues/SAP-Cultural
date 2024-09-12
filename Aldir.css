@@ -8,13 +8,15 @@
 
     body {
         font-family: 'Source Sans Pro', Arial, sans-serif;
+     
+        background-color: #0a2540; /* Cor de fundo da página */
         color: #fff;
-        background-color: #000000; /* Cor de fundo da página */
        
     }
 
     html {
         scroll-behavior: smooth;
+        
     }
 
     /* ------------------------------------------------------  INICIO - Navbar ------------------------------------------------ */
@@ -76,6 +78,7 @@
         text-align: center;
         background-color: #007bff;
         
+        
     }
 
     .main-nav ul {
@@ -94,13 +97,13 @@
         display: block;
         color: rgba(255, 255, 255, .9);
         text-decoration: none;
-        padding: 23px;
+        padding: 20px;
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
         transition: background-color .3s ease, color .3s ease, border-bottom .3s ease, opacity .3s ease;
         font-weight: 100;
         opacity: 1; /* Corrigido de 300 para 1 */
-        border-radius: 5px;
+        
     }
 
     .main-nav ul li a:hover,
@@ -115,8 +118,8 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background: white;
-        box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+        background: #111 ;
+       
         padding: 0;
         opacity: 0;
         visibility: hidden;
@@ -132,21 +135,24 @@
     }
 
     .main-nav ul li ul li {
-        min-width: 190px;
+        min-width: 200px;
     }
 
     .main-nav ul li ul li a {
-        color: #555;
-        border-bottom: 1px solid #DDE0E7;
-        background: transparent;
-        padding: 1rem 2rem;
-        transition: background-color .3s ease, color .3s ease;
+        color: #ffffff;
+    background: transparent;
+    padding: 1rem 1rem;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent; ;
+    transition: background-color 0.3s ease, color 0.3s ease, border-left 0.3s ease;
     }
 
     .main-nav ul li ul li a:hover,
-    .main-nav ul li ul li a:focus {
-        background: #eee;
-        color: #111;
+    .main-nav ul li ul li a:focus,
+    .main-nav ul li ul li a.active {
+        background-color: #1d4a90; /* Cor de fundo ao passar o mouse ou quando ativo */
+        border-left: 4px solid #ff4b4b; /* Cor da borda lateral ao passar o mouse ou quando ativo */
+        color: #ffffff; /* Cor do texto ao passar o mouse ou quando ativo */
     }
 
     /* ------------------------------------------------------  FIM - Navbar ------------------------------------------------ */
@@ -155,9 +161,9 @@
     
     /* ----------------Estilo para o banner abaixo do menu navbar ----------------------- */
     .banner {
+        
         width: 100%; /* Faz o banner ocupar toda a largura da tela */
         height: 100%; /* Altura do banner ajustada */
-        /* background-color: #4b0082; Cor de fundo do banner */
         text-align: center; /* Centraliza o conteúdo dentro do banner */
         padding: 4vh ; /* Espaçamento interno do banner */
         position: relative; /* Garante que o banner comece logo abaixo do navbar */
@@ -169,6 +175,7 @@
     /* Quando o banner for escondido */
     .banner.hide {
         transform: translateY(-100%); /* Move o banner para fora da tela */
+        
     }
 
     /* Espaçamento abaixo do header para evitar sobreposição */
@@ -183,10 +190,12 @@
         max-width: 1200px; /* Define a largura máxima do contêiner */
         margin: 0 auto; /* Centraliza o contêiner na página */
         position: relative;
+        
     }
 
-    /* Estilos para a barra lateral */
+    /* --------------------------------------  Inicio SIDEBAR ----------------------------------- */
     .sidebar {
+        
         width: 250px; /* Largura da barra lateral */
         background-color: #111; /* Cor de fundo da barra lateral */
         padding: 20px;
@@ -209,7 +218,7 @@
     }
 
     .sidebar ul li a {
-        color: white;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         padding: 10px;
         display: block;
@@ -243,7 +252,7 @@
     .content {
         flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
         padding: 20px;
-    background-color: #ffffff;  /* Cor de fundo do conteúdo principal */
+       /*  background-color: #ffffff;  Cor de fundo do conteúdo principal */
         color: #fff; /* Cor do texto */
         max-width: 800px; /* Largura máxima para o texto centralizado */
         margin: 0 auto; /* Centraliza o conteúdo na página */
@@ -259,6 +268,7 @@
         font-weight: bold; /* Negrito para destaque */
         margin-bottom: 30px; /* Espaço abaixo do título */
         color: #fff; /* Cor branca para o texto */
+        
            
     }
 
@@ -274,10 +284,12 @@
 
     /* ----------------------- Estilos para o contêiner de conteúdo ao lado do sidebar ------------------------------------- */
 .content-sidebar-wrapper {
+    
     display: flex;
     max-width: 1200px; /* Define a largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner na página */
     position: relative;
+    
 }
 
 /* Estilos para a barra lateral */
@@ -290,6 +302,7 @@
     top: 150px; /* Alinha a barra lateral logo abaixo do banner */
     overflow-y: auto; /* Permite rolar o conteúdo */
     z-index: 900; /* Garante que a barra lateral fique abaixo do banner */
+    
 }
 
 /* Estilos para o conteúdo principal */
@@ -303,6 +316,7 @@
     overflow-y: scroll; /* Permite rolar o conteúdo interno */
     scrollbar-width: none; /* Oculta a barra de rolagem para Firefox */
     -ms-overflow-style: none; /* Oculta a barra de rolagem para Internet Explorer 10+ */
+    
 }
 
 /* Oculta a barra de rolagem para Webkit (Chrome, Safari) */
@@ -322,7 +336,7 @@
     padding: 20px;
     margin: 0 auto;
     background-color: #222222; /* Fundo escuro para o FAQ */
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .faq h2, .faq h3 {
@@ -390,8 +404,9 @@
 
 /*---------------------------- FIM FAQ ---------------------------*/
 
-/*---------------------------- INÍCIO EDITAIS ---------------------------*/
 
+
+/*---------------------------- INÍCIO EDITAIS ---------------------------*/
 .editais {
     width: 100%;
     max-width: 1000px;
@@ -400,6 +415,7 @@
     padding: 20px;
     border-radius: 5px;
 }
+
 
 .edital-item {
     border-bottom: 1px solid #ccc;
@@ -432,7 +448,7 @@
     max-height: 0;
     opacity: 0;
     padding: 0 10px;
-    background-color: #0d2033;
+   /* background-color: #757778;*/
     color: #fff;
     border-radius: 4px;
     margin-top: 5px;
@@ -458,6 +474,8 @@
 .edital-question.active .edital-icon {
     transform: rotate(100deg); /* Gira a seta para a direita */
 }
+
+
 
 /*---------------------------- FIM EDITAIS ---------------------------*/
 
@@ -552,6 +570,3 @@
         background-color: #0056b3; /* Cor de fundo ao passar o mouse */
         transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
     }
-
-
-
